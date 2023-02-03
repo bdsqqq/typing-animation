@@ -26,7 +26,7 @@ const AnimatedText = () => {
       x: 0,
       transition: {
         duration: Math.min(msPerChar / 1000, 0.2),
-        delay: Math.random() * 0.05,
+        delay: Math.random() * 0.07,
       },
     },
     hidden: {
@@ -34,7 +34,6 @@ const AnimatedText = () => {
       opacity: 0,
       transition: {
         duration: msPerChar / 1000,
-        delay: Math.random() * 0.05,
       },
     },
     exit: {
