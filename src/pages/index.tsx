@@ -26,6 +26,8 @@ const AnimatedText = () => {
       x: 0,
       transition: {
         duration: Math.min(msPerChar / 1000, 0.2),
+        // The irregular delay is part of the typing effect.
+        // eslint-disable-next-line react-hooks/purity
         delay: Math.random() * 0.07,
       },
     },
